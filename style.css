@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.list-link {
+  display: flex;
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.nav-page {
+  order: 2;
+  display: flex;
+  align-items: center;
+  flex-basis: 15%;
+  height: 5vh;
+  padding: 15px;
+  background-color: rgba(186, 191, 255, 23%);
+  border-radius: 15px;
+}
+
+.btn {
+  padding: 0;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: transparent;
+  outline: 1px solid transparent;
+  border: 1px solid transparent;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn-first {
+  order: 1;
+  margin-left: 0;
+}
+
+.btn-prev {
+  order: 2;
+}
+
+.btn-next {
+  order: 4;
+}
+
+.btn-over {
+  order: 5;
+  margin-right: 0;
+}
+
+.nav-list {
+  display: flex;
+  order: 3;
+  
+}
+
+.nav-link {
+  margin-right: 5px;
+  padding: 5px 10px 5px 10px;
+}
+
+.nav-link:last-child {
+  margin-right: 0;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: rgb(11, 31, 116);
+}
+
+.link-active {
+  border-radius: 5px;
+  background-color: rgba(158, 181, 197, 31%);
+}
+
+.link-active a {
+  font-weight: 700;
+}
+
+.post-list {
+  flex-basis: 60%;
+  order: 1;
+}
+
+.post-item {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(186, 191, 255, 23%);
+  border-radius: 15px;
+}
+
+.post-item:last-child {
+  margin-bottom: 0;
+}
+
+.post-item p {
+  max-width: 60vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: default;
+  font-size: 18px;
+  color: rgb(19, 16, 37);
+}
+
+.post-item a {
+  text-decoration: none;
+  color: rgb(11, 31, 116);
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 60%;
+  order: 1;
+}
+
+.post-content {
+  order: 1;
+  padding: 15px;
+  margin-bottom: 40px;
+  background-color: rgba(186, 191, 255, 23%);
+  border-radius: 15px;
+}
+
+.post-content h1 {
+  color: rgb(11, 31, 116);
+}
+
+.post-content p {
+  color: rgb(19, 16, 37);
+}
+
+.comments-list {
+  order: 2;
+}
+
+.comment-item {
+  max-width: 20vw;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: rgba(146, 171, 223, 0.377);
+  border-radius: 15px;
+}
+
+.comment-item:last-child {
+  margin-bottom: 0;
+}
+
+.comment-item h2 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: rgb(11, 31, 116);
+}
+
+.comment-item p {
+  margin: 0;
+  font-size: 18px;
+  color: rgb(19, 16, 37);
+}
